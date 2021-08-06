@@ -4,19 +4,20 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="twitter:card" content="summary_large_image" /><!-- Begin Jekyll SEO tag v2.6.1 -->
-<title>Import Package | thash’s blog</title>
+<title>Fastpages Notebook Blog Post | thash’s blog</title>
 <meta name="generator" content="Jekyll v4.1.1" />
-<meta property="og:title" content="Import Package" />
+<meta property="og:title" content="Fastpages Notebook Blog Post" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="An easy to use blogging platform with support for Jupyter Notebooks." />
-<meta property="og:description" content="An easy to use blogging platform with support for Jupyter Notebooks." />
-<link rel="canonical" href="https://thash-ebm.github.io/blog/2021/08/06/GAN.html" />
-<meta property="og:url" content="https://thash-ebm.github.io/blog/2021/08/06/GAN.html" />
+<meta name="description" content="A tutorial of fastpages for Jupyter notebooks." />
+<meta property="og:description" content="A tutorial of fastpages for Jupyter notebooks." />
+<link rel="canonical" href="https://thash-ebm.github.io/blog/jupyter/2021/08/06/GAN.html" />
+<meta property="og:url" content="https://thash-ebm.github.io/blog/jupyter/2021/08/06/GAN.html" />
 <meta property="og:site_name" content="thash’s blog" />
+<meta property="og:image" content="https://thash-ebm.github.io/blog/images/chart-preview.png" />
 <meta property="og:type" content="article" />
 <meta property="article:published_time" content="2021-08-06T00:00:00-05:00" />
 <script type="application/ld+json">
-{"datePublished":"2021-08-06T00:00:00-05:00","url":"https://thash-ebm.github.io/blog/2021/08/06/GAN.html","@type":"BlogPosting","headline":"Import Package","dateModified":"2021-08-06T00:00:00-05:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://thash-ebm.github.io/blog/2021/08/06/GAN.html"},"description":"An easy to use blogging platform with support for Jupyter Notebooks.","@context":"https://schema.org"}</script>
+{"datePublished":"2021-08-06T00:00:00-05:00","url":"https://thash-ebm.github.io/blog/jupyter/2021/08/06/GAN.html","@type":"BlogPosting","image":"https://thash-ebm.github.io/blog/images/chart-preview.png","headline":"Fastpages Notebook Blog Post","dateModified":"2021-08-06T00:00:00-05:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://thash-ebm.github.io/blog/jupyter/2021/08/06/GAN.html"},"description":"A tutorial of fastpages for Jupyter notebooks.","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 <link rel="stylesheet" href="/blog/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="https://thash-ebm.github.io/blog/feed.xml" title="thash's blog" /><link rel="shortcut icon" type="image/x-icon" href="/blog/images/favicon.ico"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Primer/15.2.0/primer.css" integrity="sha512-xTz2ys4coGAOz8vuV1NcQBkgVmKhsSEtjbqyMJbBHRplFuvKIUo6xhLHpAyPt9mfR6twHJgn9OgVLuqOvjeBhg==" crossorigin="anonymous" />
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
@@ -71,7 +72,7 @@ window.onload = wrap_img;
         <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
 
   <header class="post-header">
-    <h1 class="post-title p-name" itemprop="name headline">Import Package</h1><p class="post-meta post-meta-title"><time class="dt-published" datetime="2021-08-06T00:00:00-05:00" itemprop="datePublished">
+    <h1 class="post-title p-name" itemprop="name headline">Fastpages Notebook Blog Post</h1><p class="page-description">A tutorial of fastpages for Jupyter notebooks.</p><p class="post-meta post-meta-title"><time class="dt-published" datetime="2021-08-06T00:00:00-05:00" itemprop="datePublished">
         Aug 6, 2021
       </time>
        • <span class="read-time" title="Estimated read time">
@@ -81,6 +82,13 @@ window.onload = wrap_img;
     
 </span></p>
 
+    
+      <p class="category-tags"><i class="fas fa-tags category-tags-icon"></i></i> 
+      
+        <a class="category-tags-link" href="/blog/categories/#jupyter">jupyter</a>
+        
+      
+      </p>
     
 
     
@@ -108,7 +116,28 @@ window.onload = wrap_img;
       </header>
 
   <div class="post-content e-content" itemprop="articleBody">
-    <!--
+    <ul class="section-nav">
+<li class="toc-entry toc-h1"><a href="#Import-Package">Import Package </a>
+<ul>
+<li class="toc-entry toc-h2"><a href="#install">install </a></li>
+<li class="toc-entry toc-h2"><a href="#import">import </a></li>
+</ul>
+</li>
+<li class="toc-entry toc-h1"><a href="#Set-Params">Set Params </a></li>
+<li class="toc-entry toc-h1"><a href="#Data-Module">Data Module </a></li>
+<li class="toc-entry toc-h1"><a href="#LT-Module">LT Module </a>
+<ul>
+<li class="toc-entry toc-h2"><a href="#Component">Component </a></li>
+<li class="toc-entry toc-h2"><a href="#Module">Module </a></li>
+</ul>
+</li>
+<li class="toc-entry toc-h1"><a href="#RUN">RUN </a>
+<ul>
+<li class="toc-entry toc-h3"><a href="#run-summary">Run summary:</a></li>
+<li class="toc-entry toc-h3"><a href="#run-history">Run history:</a></li>
+</ul>
+</li>
+</ul><!--
 #################################################
 ### THIS FILE WAS AUTOGENERATED! DO NOT EDIT! ###
 #################################################
@@ -117,32 +146,21 @@ window.onload = wrap_img;
 
 <div class="container" id="notebook-container">
         
-    
-    
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-
+<div class="cell border-box-sizing text_cell rendered">
 <div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-python"><pre><span></span><span class="o">&gt;</span> <span class="n">A</span> <span class="n">tutorial</span> <span class="n">of</span> <span class="n">fastpages</span> <span class="k">for</span> <span class="n">Jupyter</span> <span class="n">notebooks</span><span class="o">.</span>
-
-<span class="o">-</span> <span class="n">toc</span><span class="p">:</span> <span class="n">true</span> 
-<span class="o">-</span> <span class="n">badges</span><span class="p">:</span> <span class="n">true</span>
-<span class="o">-</span> <span class="n">comments</span><span class="p">:</span> <span class="n">true</span>
-<span class="o">-</span> <span class="n">categories</span><span class="p">:</span> <span class="p">[</span><span class="n">jupyter</span><span class="p">]</span>
-<span class="o">-</span> <span class="n">image</span><span class="p">:</span> <span class="n">images</span><span class="o">/</span><span class="n">chart</span><span class="o">-</span><span class="n">preview</span><span class="o">.</span><span class="n">png</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-</div>
-    
-
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="install">install<a class="anchor-link" href="#install"> </a></h2>
+<h1 id="Import-Package">
+<a class="anchor" href="#Import-Package" aria-hidden="true"><span class="octicon octicon-link"></span></a>Import Package<a class="anchor-link" href="#Import-Package"> </a>
+</h1>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="install">
+<a class="anchor" href="#install" aria-hidden="true"><span class="octicon octicon-link"></span></a>install<a class="anchor-link" href="#install"> </a>
+</h2>
 </div>
 </div>
 </div>
@@ -248,7 +266,7 @@ Installing collected packages: multidict, yarl, async-timeout, fsspec, aiohttp, 
     Found existing installation: future 0.16.0
     Uninstalling future-0.16.0:
       Successfully uninstalled future-0.16.0
-<span class="ansi-red-fg">ERROR: pip&#39;s dependency resolver does not currently take into account all the packages that are installed. This behaviour is the source of the following dependency conflicts.
+<span class="ansi-red-fg">ERROR: pip's dependency resolver does not currently take into account all the packages that are installed. This behaviour is the source of the following dependency conflicts.
 tensorflow 2.5.0 requires tensorboard~=2.5, but you have tensorboard 2.4.1 which is incompatible.</span>
 Successfully installed PyYAML-5.4.1 aiohttp-3.7.4.post0 async-timeout-3.0.1 fsspec-2021.7.0 future-0.18.2 multidict-5.1.0 pyDeprecate-0.3.1 pytorch-lightning-1.4.1 tensorboard-2.4.1 torchmetrics-0.4.1 yarl-1.6.3
 Collecting wandb
@@ -311,7 +329,7 @@ Installing collected packages: smmap, urllib3, gitdb, subprocess32, shortuuid, s
     Found existing installation: requests 2.23.0
     Uninstalling requests-2.23.0:
       Successfully uninstalled requests-2.23.0
-<span class="ansi-red-fg">ERROR: pip&#39;s dependency resolver does not currently take into account all the packages that are installed. This behaviour is the source of the following dependency conflicts.
+<span class="ansi-red-fg">ERROR: pip's dependency resolver does not currently take into account all the packages that are installed. This behaviour is the source of the following dependency conflicts.
 google-colab 1.0.0 requires requests~=2.23.0, but you have requests 2.26.0 which is incompatible.
 datascience 0.10.6 requires folium==0.2.1, but you have folium 0.8.3 which is incompatible.</span>
 Successfully installed GitPython-3.1.18 configparser-5.0.2 docker-pycreds-0.4.0 gitdb-4.0.7 pathtools-0.1.2 requests-2.26.0 sentry-sdk-1.3.1 shortuuid-1.0.1 smmap-4.0.0 subprocess32-3.5.4 urllib3-1.26.6 wandb-0.11.2
@@ -346,9 +364,12 @@ Successfully installed antlr4-python3-runtime-4.8 omegaconf-2.1.0
 </div>
     
 
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="import">import<a class="anchor-link" href="#import"> </a></h2>
+<h2 id="import">
+<a class="anchor" href="#import" aria-hidden="true"><span class="octicon octicon-link"></span></a>import<a class="anchor-link" href="#import"> </a>
+</h2>
 </div>
 </div>
 </div>
@@ -382,9 +403,12 @@ Successfully installed antlr4-python3-runtime-4.8 omegaconf-2.1.0
 </div>
     
 
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="Set-Params">Set Params<a class="anchor-link" href="#Set-Params"> </a></h1>
+<h1 id="Set-Params">
+<a class="anchor" href="#Set-Params" aria-hidden="true"><span class="octicon octicon-link"></span></a>Set Params<a class="anchor-link" href="#Set-Params"> </a>
+</h1>
 </div>
 </div>
 </div>
@@ -397,21 +421,21 @@ Successfully installed antlr4-python3-runtime-4.8 omegaconf-2.1.0
     <div class="input_area">
 <div class=" highlight hl-python"><pre><span></span><span class="n">params</span> <span class="o">=</span> <span class="n">OmegaConf</span><span class="o">.</span><span class="n">create</span><span class="p">({</span>
 
-    <span class="s1">&#39;dataset&#39;</span><span class="p">:</span> <span class="p">{</span>
-        <span class="s1">&#39;batch_size&#39;</span><span class="p">:</span> <span class="mi">256</span>
+    <span class="s1">'dataset'</span><span class="p">:</span> <span class="p">{</span>
+        <span class="s1">'batch_size'</span><span class="p">:</span> <span class="mi">256</span>
     <span class="p">},</span>
     
-    <span class="s1">&#39;lt&#39;</span> <span class="p">:</span> <span class="p">{</span>
-        <span class="s1">&#39;latent_dim&#39;</span><span class="p">:</span> <span class="mi">100</span><span class="p">,</span>
-        <span class="s1">&#39;lr&#39;</span><span class="p">:</span> <span class="mf">0.0002</span><span class="p">,</span>
-        <span class="s1">&#39;b1&#39;</span><span class="p">:</span> <span class="mf">0.5</span><span class="p">,</span>
-        <span class="s1">&#39;b2&#39;</span><span class="p">:</span> <span class="mf">0.999</span><span class="p">,</span>
+    <span class="s1">'lt'</span> <span class="p">:</span> <span class="p">{</span>
+        <span class="s1">'latent_dim'</span><span class="p">:</span> <span class="mi">100</span><span class="p">,</span>
+        <span class="s1">'lr'</span><span class="p">:</span> <span class="mf">0.0002</span><span class="p">,</span>
+        <span class="s1">'b1'</span><span class="p">:</span> <span class="mf">0.5</span><span class="p">,</span>
+        <span class="s1">'b2'</span><span class="p">:</span> <span class="mf">0.999</span><span class="p">,</span>
 
     <span class="p">},</span>
 
-    <span class="s1">&#39;trainer&#39;</span><span class="p">:</span> <span class="p">{</span>
-        <span class="s1">&#39;gpus&#39;</span> <span class="p">:</span> <span class="o">-</span><span class="mi">1</span><span class="p">,</span>
-        <span class="s1">&#39;max_epochs&#39;</span><span class="p">:</span> <span class="mi">3</span><span class="p">,</span>
+    <span class="s1">'trainer'</span><span class="p">:</span> <span class="p">{</span>
+        <span class="s1">'gpus'</span> <span class="p">:</span> <span class="o">-</span><span class="mi">1</span><span class="p">,</span>
+        <span class="s1">'max_epochs'</span><span class="p">:</span> <span class="mi">3</span><span class="p">,</span>
     <span class="p">}</span>
 <span class="p">})</span>
 </pre></div>
@@ -423,9 +447,12 @@ Successfully installed antlr4-python3-runtime-4.8 omegaconf-2.1.0
 </div>
     
 
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="Data-Module">Data Module<a class="anchor-link" href="#Data-Module"> </a></h1>
+<h1 id="Data-Module">
+<a class="anchor" href="#Data-Module" aria-hidden="true"><span class="octicon octicon-link"></span></a>Data Module<a class="anchor-link" href="#Data-Module"> </a>
+</h1>
 </div>
 </div>
 </div>
@@ -438,7 +465,7 @@ Successfully installed antlr4-python3-runtime-4.8 omegaconf-2.1.0
     <div class="input_area">
 <div class=" highlight hl-python"><pre><span></span><span class="k">class</span> <span class="nc">MNIST_DataModule</span><span class="p">(</span><span class="n">pl</span><span class="o">.</span><span class="n">LightningDataModule</span><span class="p">):</span>
 
-    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">data_dir</span><span class="o">=</span><span class="s1">&#39;./&#39;</span><span class="p">,</span> <span class="n">batch_size</span><span class="o">=</span><span class="mi">128</span><span class="p">):</span>
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">data_dir</span><span class="o">=</span><span class="s1">'./'</span><span class="p">,</span> <span class="n">batch_size</span><span class="o">=</span><span class="mi">128</span><span class="p">):</span>
         <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="fm">__init__</span><span class="p">()</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">data_dir</span> <span class="o">=</span> <span class="n">data_dir</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">batch_size</span> <span class="o">=</span> <span class="n">batch_size</span>
@@ -469,15 +496,21 @@ Successfully installed antlr4-python3-runtime-4.8 omegaconf-2.1.0
 </div>
     
 
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="LT-Module">LT Module<a class="anchor-link" href="#LT-Module"> </a></h1>
+<h1 id="LT-Module">
+<a class="anchor" href="#LT-Module" aria-hidden="true"><span class="octicon octicon-link"></span></a>LT Module<a class="anchor-link" href="#LT-Module"> </a>
+</h1>
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Component">Component<a class="anchor-link" href="#Component"> </a></h2>
+<h2 id="Component">
+<a class="anchor" href="#Component" aria-hidden="true"><span class="octicon octicon-link"></span></a>Component<a class="anchor-link" href="#Component"> </a>
+</h2>
 </div>
 </div>
 </div>
@@ -536,7 +569,7 @@ Successfully installed antlr4-python3-runtime-4.8 omegaconf-2.1.0
 <span class="ansi-green-intense-fg ansi-bold">      4</span>         super<span class="ansi-blue-fg">(</span><span class="ansi-blue-fg">)</span><span class="ansi-blue-fg">.</span>__init__<span class="ansi-blue-fg">(</span><span class="ansi-blue-fg">)</span>
 <span class="ansi-green-intense-fg ansi-bold">      5</span>         self<span class="ansi-blue-fg">.</span>x_shape <span class="ansi-blue-fg">=</span> x_shape
 
-<span class="ansi-red-fg">NameError</span>: name &#39;nn&#39; is not defined</pre>
+<span class="ansi-red-fg">NameError</span>: name 'nn' is not defined</pre>
 </div>
 </div>
 
@@ -580,9 +613,12 @@ Successfully installed antlr4-python3-runtime-4.8 omegaconf-2.1.0
 </div>
     
 
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Module">Module<a class="anchor-link" href="#Module"> </a></h2>
+<h2 id="Module">
+<a class="anchor" href="#Module" aria-hidden="true"><span class="octicon octicon-link"></span></a>Module<a class="anchor-link" href="#Module"> </a>
+</h2>
 </div>
 </div>
 </div>
@@ -632,9 +668,9 @@ Successfully installed antlr4-python3-runtime-4.8 omegaconf-2.1.0
             
             <span class="c1"># generator loss</span>
             <span class="n">g_loss</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">adversarial_loss</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">discriminator</span><span class="p">(</span><span class="bp">self</span><span class="p">(</span><span class="n">z</span><span class="p">)),</span> <span class="n">valid</span><span class="p">)</span>
-            <span class="bp">self</span><span class="o">.</span><span class="n">log</span><span class="p">(</span><span class="s1">&#39;train/g_loss&#39;</span><span class="p">,</span> <span class="n">g_loss</span><span class="p">)</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">log</span><span class="p">(</span><span class="s1">'train/g_loss'</span><span class="p">,</span> <span class="n">g_loss</span><span class="p">)</span>
             
-            <span class="k">return</span> <span class="p">{</span><span class="s1">&#39;loss&#39;</span><span class="p">:</span> <span class="n">g_loss</span><span class="p">}</span>
+            <span class="k">return</span> <span class="p">{</span><span class="s1">'loss'</span><span class="p">:</span> <span class="n">g_loss</span><span class="p">}</span>
 
         <span class="c1"># train discriminator</span>
         <span class="k">if</span> <span class="n">optimizer_idx</span> <span class="o">==</span> <span class="mi">1</span><span class="p">:</span>
@@ -649,9 +685,9 @@ Successfully installed antlr4-python3-runtime-4.8 omegaconf-2.1.0
 
             <span class="c1"># discriminator loss</span>
             <span class="n">d_loss</span> <span class="o">=</span> <span class="p">(</span><span class="n">real_loss</span> <span class="o">+</span> <span class="n">fake_loss</span><span class="p">)</span> <span class="o">/</span> <span class="mi">2</span>
-            <span class="bp">self</span><span class="o">.</span><span class="n">log</span><span class="p">(</span><span class="s1">&#39;train/d_loss&#39;</span><span class="p">,</span> <span class="n">d_loss</span><span class="p">)</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">log</span><span class="p">(</span><span class="s1">'train/d_loss'</span><span class="p">,</span> <span class="n">d_loss</span><span class="p">)</span>
             
-            <span class="k">return</span> <span class="p">{</span><span class="s1">&#39;loss&#39;</span><span class="p">:</span> <span class="n">d_loss</span><span class="p">}</span>
+            <span class="k">return</span> <span class="p">{</span><span class="s1">'loss'</span><span class="p">:</span> <span class="n">d_loss</span><span class="p">}</span>
 
 
     <span class="k">def</span> <span class="nf">configure_optimizers</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
@@ -665,12 +701,12 @@ Successfully installed antlr4-python3-runtime-4.8 omegaconf-2.1.0
         <span class="c1"># log sampled images</span>
         <span class="n">sample_imgs</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">generated_imgs</span><span class="p">[:</span><span class="mi">25</span><span class="p">]</span>
         <span class="n">grid</span> <span class="o">=</span> <span class="n">torchvision</span><span class="o">.</span><span class="n">utils</span><span class="o">.</span><span class="n">make_grid</span><span class="p">(</span><span class="n">sample_imgs</span><span class="p">,</span> <span class="n">nrow</span><span class="o">=</span><span class="mi">5</span><span class="p">)</span>
-        <span class="bp">self</span><span class="o">.</span><span class="n">log</span><span class="p">(</span><span class="s1">&#39;test_generated_images&#39;</span><span class="p">,</span> <span class="n">wandb</span><span class="o">.</span><span class="n">Image</span><span class="p">(</span><span class="n">grid</span><span class="p">))</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">log</span><span class="p">(</span><span class="s1">'test_generated_images'</span><span class="p">,</span> <span class="n">wandb</span><span class="o">.</span><span class="n">Image</span><span class="p">(</span><span class="n">grid</span><span class="p">))</span>
 
         <span class="n">z</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">validation_z</span><span class="o">.</span><span class="n">type_as</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">generator</span><span class="o">.</span><span class="n">net</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">weight</span><span class="p">)</span>
         <span class="n">sample_imgs</span> <span class="o">=</span> <span class="bp">self</span><span class="p">(</span><span class="n">z</span><span class="p">)</span>
         <span class="n">grid</span> <span class="o">=</span> <span class="n">torchvision</span><span class="o">.</span><span class="n">utils</span><span class="o">.</span><span class="n">make_grid</span><span class="p">(</span><span class="n">sample_imgs</span><span class="p">,</span> <span class="n">nrow</span><span class="o">=</span><span class="mi">5</span><span class="p">)</span>
-        <span class="bp">self</span><span class="o">.</span><span class="n">log</span><span class="p">(</span><span class="s1">&#39;val_generated_images&#39;</span><span class="p">,</span> <span class="n">wandb</span><span class="o">.</span><span class="n">Image</span><span class="p">(</span><span class="n">grid</span><span class="p">))</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">log</span><span class="p">(</span><span class="s1">'val_generated_images'</span><span class="p">,</span> <span class="n">wandb</span><span class="o">.</span><span class="n">Image</span><span class="p">(</span><span class="n">grid</span><span class="p">))</span>
 </pre></div>
 
     </div>
@@ -680,9 +716,12 @@ Successfully installed antlr4-python3-runtime-4.8 omegaconf-2.1.0
 </div>
     
 
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="RUN">RUN<a class="anchor-link" href="#RUN"> </a></h1>
+<h1 id="RUN">
+<a class="anchor" href="#RUN" aria-hidden="true"><span class="octicon octicon-link"></span></a>RUN<a class="anchor-link" href="#RUN"> </a>
+</h1>
 </div>
 </div>
 </div>
@@ -694,9 +733,9 @@ Successfully installed antlr4-python3-runtime-4.8 omegaconf-2.1.0
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-python"><pre><span></span><span class="n">wandb</span><span class="o">.</span><span class="n">login</span><span class="p">()</span>
-<span class="n">wandb_logger</span> <span class="o">=</span> <span class="n">pl</span><span class="o">.</span><span class="n">loggers</span><span class="o">.</span><span class="n">WandbLogger</span><span class="p">(</span><span class="n">name</span> <span class="o">=</span> <span class="n">datetime</span><span class="o">.</span><span class="n">now</span><span class="p">()</span><span class="o">.</span><span class="n">strftime</span><span class="p">(</span><span class="s1">&#39;%y%m</span><span class="si">%d</span><span class="s1">-%H%M%S&#39;</span><span class="p">),</span>
-                                      <span class="n">project</span> <span class="o">=</span> <span class="s1">&#39;Basic GAN&#39;</span><span class="p">,</span>
-                                      <span class="n">tags</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;gan&#39;</span><span class="p">,</span> <span class="s1">&#39;notebook&#39;</span><span class="p">])</span>
+<span class="n">wandb_logger</span> <span class="o">=</span> <span class="n">pl</span><span class="o">.</span><span class="n">loggers</span><span class="o">.</span><span class="n">WandbLogger</span><span class="p">(</span><span class="n">name</span> <span class="o">=</span> <span class="n">datetime</span><span class="o">.</span><span class="n">now</span><span class="p">()</span><span class="o">.</span><span class="n">strftime</span><span class="p">(</span><span class="s1">'%y%m</span><span class="si">%d</span><span class="s1">-%H%M%S'</span><span class="p">),</span>
+                                      <span class="n">project</span> <span class="o">=</span> <span class="s1">'Basic GAN'</span><span class="p">,</span>
+                                      <span class="n">tags</span><span class="o">=</span><span class="p">[</span><span class="s1">'gan'</span><span class="p">,</span> <span class="s1">'notebook'</span><span class="p">])</span>
 
 <span class="c1"># データセット</span>
 <span class="n">dm</span> <span class="o">=</span> <span class="n">MNIST_DataModule</span><span class="p">(</span><span class="o">**</span><span class="n">params</span><span class="o">.</span><span class="n">dataset</span><span class="p">)</span>
@@ -727,7 +766,7 @@ Successfully installed antlr4-python3-runtime-4.8 omegaconf-2.1.0
 <pre>GPU available: True, used: True
 TPU available: False, using: 0 TPU cores
 /usr/local/lib/python3.7/dist-packages/pytorch_lightning/trainer/configuration_validator.py:99: UserWarning: you passed in a val_dataloader but have no validation_step. Skipping val loop
-  rank_zero_warn(f&#39;you passed in a {loader_name} but have no {step_name}. Skipping {stage} loop&#39;)
+  rank_zero_warn(f'you passed in a {loader_name} but have no {step_name}. Skipping {stage} loop')
 </pre>
 </div>
 </div>
@@ -786,11 +825,11 @@ Extracting ./MNIST/raw/t10k-labels-idx1-ubyte.gz to ./MNIST/raw
 
 <div class="output_html rendered_html output_subarea ">
 
-                Tracking run with wandb version 0.10.33<br />
-                Syncing run <strong style="color:#cdcd00">210714-040728</strong> to <a href="https://wandb.ai" target="_blank">Weights &amp; Biases</a> <a href="https://docs.wandb.com/integrations/jupyter.html" target="_blank">(Documentation)</a>.<br />
-                Project page: <a href="https://wandb.ai/hashimoto/Basic%20GAN" target="_blank">https://wandb.ai/hashimoto/Basic%20GAN</a><br />
-                Run page: <a href="https://wandb.ai/hashimoto/Basic%20GAN/runs/22s87fxq" target="_blank">https://wandb.ai/hashimoto/Basic%20GAN/runs/22s87fxq</a><br />
-                Run data is saved locally in <code>/content/wandb/run-20210714_041236-22s87fxq</code><br /><br />
+                Tracking run with wandb version 0.10.33<br>
+                Syncing run <strong style="color:#cdcd00">210714-040728</strong> to <a href="https://wandb.ai" target="_blank">Weights &amp; Biases</a> <a href="https://docs.wandb.com/integrations/jupyter.html" target="_blank">(Documentation)</a>.<br>
+                Project page: <a href="https://wandb.ai/hashimoto/Basic%20GAN" target="_blank">https://wandb.ai/hashimoto/Basic%20GAN</a><br>
+                Run page: <a href="https://wandb.ai/hashimoto/Basic%20GAN/runs/22s87fxq" target="_blank">https://wandb.ai/hashimoto/Basic%20GAN/runs/22s87fxq</a><br>
+                Run data is saved locally in <code>/content/wandb/run-20210714_041236-22s87fxq</code><br><br>
             
 </div>
 
@@ -825,7 +864,7 @@ Extracting ./MNIST/raw/t10k-labels-idx1-ubyte.gz to ./MNIST/raw
 
 
 <div class="output_html rendered_html output_subarea ">
-<br />Waiting for W&amp;B process to finish, PID 441<br />Program ended successfully.
+<br>Waiting for W&amp;B process to finish, PID 441<br>Program ended successfully.
 </div>
 
 </div>
@@ -852,10 +891,41 @@ Find internal logs for this run at: <code>/content/wandb/run-20210714_041236-22s
 
 
 <div class="output_html rendered_html output_subarea ">
-<h3>Run summary:</h3><br /><style>
+<h3>
+<a class="anchor" href="#run-summary" aria-hidden="true"><span class="octicon octicon-link"></span></a>Run summary:</h3>
+<br><style>
     table.wandb td:nth-child(1) { padding: 0 10px; text-align: right }
-    </style><table class="wandb">
-<tr><td>train/g_loss</td><td>1.12359</td></tr><tr><td>train/d_loss</td><td>0.54438</td></tr><tr><td>epoch</td><td>2</td></tr><tr><td>trainer/global_step</td><td>704</td></tr><tr><td>_runtime</td><td>33</td></tr><tr><td>_timestamp</td><td>1626235989</td></tr><tr><td>_step</td><td>16</td></tr></table>
+    </style>
+<table class="wandb">
+<tr>
+<td>train/g_loss</td>
+<td>1.12359</td>
+</tr>
+<tr>
+<td>train/d_loss</td>
+<td>0.54438</td>
+</tr>
+<tr>
+<td>epoch</td>
+<td>2</td>
+</tr>
+<tr>
+<td>trainer/global_step</td>
+<td>704</td>
+</tr>
+<tr>
+<td>_runtime</td>
+<td>33</td>
+</tr>
+<tr>
+<td>_timestamp</td>
+<td>1626235989</td>
+</tr>
+<tr>
+<td>_step</td>
+<td>16</td>
+</tr>
+</table>
 </div>
 
 </div>
@@ -864,10 +934,42 @@ Find internal logs for this run at: <code>/content/wandb/run-20210714_041236-22s
 
 
 <div class="output_html rendered_html output_subarea ">
-<h3>Run history:</h3><br /><style>
+<h3>
+<a class="anchor" href="#run-history" aria-hidden="true"><span class="octicon octicon-link"></span></a>Run history:</h3>
+<br><style>
     table.wandb td:nth-child(1) { padding: 0 10px; text-align: right }
-    </style><table class="wandb">
-<tr><td>train/g_loss</td><td>▁▁▂▃▃▅▃▃▃▄▄█▁▄</td></tr><tr><td>train/d_loss</td><td>▅█▆▅▃▄▁▄▃▃▂▂▆▃</td></tr><tr><td>epoch</td><td>▁▁▁▁▁▅▅▅▅▅▅██████</td></tr><tr><td>trainer/global_step</td><td>▁▂▂▃▃▃▄▄▅▅▅▆▆▇▇██</td></tr><tr><td>_runtime</td><td>▁▁▂▃▃▃▄▄▅▅▅▆▆▇▇██</td></tr><tr><td>_timestamp</td><td>▁▁▂▃▃▃▄▄▅▅▅▆▆▇▇██</td></tr><tr><td>_step</td><td>▁▁▂▂▃▃▄▄▅▅▅▆▆▇▇██</td></tr></table><br />
+    </style>
+<table class="wandb">
+<tr>
+<td>train/g_loss</td>
+<td>▁▁▂▃▃▅▃▃▃▄▄█▁▄</td>
+</tr>
+<tr>
+<td>train/d_loss</td>
+<td>▅█▆▅▃▄▁▄▃▃▂▂▆▃</td>
+</tr>
+<tr>
+<td>epoch</td>
+<td>▁▁▁▁▁▅▅▅▅▅▅██████</td>
+</tr>
+<tr>
+<td>trainer/global_step</td>
+<td>▁▂▂▃▃▃▄▄▅▅▅▆▆▇▇██</td>
+</tr>
+<tr>
+<td>_runtime</td>
+<td>▁▁▂▃▃▃▄▄▅▅▅▆▆▇▇██</td>
+</tr>
+<tr>
+<td>_timestamp</td>
+<td>▁▁▂▃▃▃▄▄▅▅▅▆▆▇▇██</td>
+</tr>
+<tr>
+<td>_step</td>
+<td>▁▁▂▂▃▃▄▄▅▅▅▆▆▇▇██</td>
+</tr>
+</table>
+<br>
 </div>
 
 </div>
@@ -886,7 +988,7 @@ Synced 5 W&amp;B file(s), 6 media file(s), 2 artifact file(s) and 2 other file(s
 
 <div class="output_html rendered_html output_subarea ">
 
-                    <br />Synced <strong style="color:#cdcd00">210714-040728</strong>: <a href="https://wandb.ai/hashimoto/Basic%20GAN/runs/22s87fxq" target="_blank">https://wandb.ai/hashimoto/Basic%20GAN/runs/22s87fxq</a><br />
+                    <br>Synced <strong style="color:#cdcd00">210714-040728</strong>: <a href="https://wandb.ai/hashimoto/Basic%20GAN/runs/22s87fxq" target="_blank">https://wandb.ai/hashimoto/Basic%20GAN/runs/22s87fxq</a><br>
                 
 </div>
 
@@ -906,7 +1008,15 @@ Synced 5 W&amp;B file(s), 6 media file(s), 2 artifact file(s) and 2 other file(s
 
 
 
-  </div><a class="u-url" href="/blog/2021/08/06/GAN.html" hidden></a>
+  </div><!-- from https://github.com/utterance/utterances -->
+<script src="https://utteranc.es/client.js"
+        repo="thash-ebm/blog"
+        issue-term="title"
+        label="blogpost-comment"
+        theme="github-light"
+        crossorigin="anonymous"
+        async>
+</script><a class="u-url" href="/blog/jupyter/2021/08/06/GAN.html" hidden></a>
 </article>
       </div>
     </main><footer class="site-footer h-card">
