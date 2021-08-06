@@ -1,1 +1,1 @@
-Sitemap: https://thash-ebm.github.io/fastai_page_test/sitemap.xml
+Sitemap: https://thash-ebm.github.io/My_blog/sitemap.xml
