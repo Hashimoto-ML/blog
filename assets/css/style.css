@@ -429,6 +429,10 @@ pre code { font-size: 15px !important; }
 
 /*-----------------------------------*/
 /*----- ADD YOUR STYLES BELOW -------*/
+.mjx-chtml { max-width: 100%; overflow-x: auto; overflow-y: hidden; }
+
+.katex-html { max-width: 100%; overflow-x: auto; overflow-y: hidden; }
+
 .language-python + .language-plaintext { border-left: 1px solid grey; margin-left: 1rem !important; }
 
 [class^="language-"]:not(.language-plaintext) pre, [class^="language-"]:not(.language-plaintext) code { background-color: #323443 !important; color: #f8f8f2; }
