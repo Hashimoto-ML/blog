@@ -1,1 +1,1 @@
-Sitemap: https://thash-ebm.github.io/new_log/sitemap.xml
+Sitemap: https://thash-ebm.github.io/new_logs/sitemap.xml
