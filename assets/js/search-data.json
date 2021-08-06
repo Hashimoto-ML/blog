@@ -40,9 +40,9 @@
   
       ,"page1": {
           "title": "About Me",
-          "content": "",
-          "url": "https://thash-ebm.github.io/blog/index-jp",
-          "relUrl": "/index-jp",
+          "content": "情報系の大学院生です. . 詳細 .",
+          "url": "https://thash-ebm.github.io/blog/about",
+          "relUrl": "/about",
           "date": ""
       }
       
