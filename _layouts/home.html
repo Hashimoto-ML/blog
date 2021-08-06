@@ -4,7 +4,13 @@ layout: default
 
 <div class="home">
   {%- if page.title -%}
-    <h1 class="page-heading">{{ page.title }}</h1>
+    <nav>
+      <a href="{{ site.baseurl }}/index-jp">ホーム</a>
+      <a href="{{ site.baseurl }}/publication-jp">研究業績</a>
+      <a href="{{ site.baseurl }}/blog">ブログ</a>
+      <a href="{{ site.baseurl }}/index">[English]</a>
+    </nav>
+    <!--<h1 class="page-heading">{{ page.title }}</h1>-->
   {%- endif -%}
 
   {{ content | markdownify }}
